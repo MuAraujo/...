@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Index.css">
+    <title> 🎉 </title>
+</head>
+<body>
+    
+    <header>
+        <h1> 💜 Feliz Aniversário Princesa 💜 </h1>
+    </header>
+    
+    <main>
+        
+        <button id="play-button" class="custom-audio-button">
+            <span class="play-icon">♫</span>
+        </button>
+
+        <audio id="audio" controls style="display: none">
+            <source src="Música/Música.mp3" type="audio/mpeg">
+            Seu navegador não suporta a reprodução de áudio.
+        </audio>
+
+
+        <p class="main-text">Bem, eu não sei como começar isso, kkkk. Eu não pretendia fazer um texto grande, mas acho que vou fazer só para deixar aqui um pouco mais bonito, kkkkk. Bom, eu queria te desejar um feliz aniversário, e só queria dizer que sou muito grato por você ter entrado na minha vida.
+            Eu sei que sou alguém bem complicado de se lidar, kkkk, mas só queria dizer que você é a pessoa mais especial pra mim, e não me arrependo de ter passado o que eu passei só para te conhecer. 
+            Você foi a melhor coisa que eu já pude ganhar na minha vida ksksks tô até chorando escrevendo isso mas releva kkkkkk, só queria falar o que eu tô pensando um pouquinho já que eu não sou muito de falar como me sinto e não sou bom falando por timidez eu acho kkkk, mas eu te amo um tantão e queria que soubesse disso, faria qualquer coisa por ti.
+            Espero que possamos desfrutar de muitos outros momentos e torço pra que seja pra sempre.
+            Enfim, feliz aniversário gostosa. Amo tu muitão.
+            🥰🥰💗 💖 💘 💝💗 💖 💘 💝 🥰🥰</p>
+
+    
+        <div class="image-container">
+            <img src="Img/Foto1.png" alt="Imagem 1">
+            <img src="Img/Foto2.png" alt="Imagem 2">
+            <img src="Img/Foto3.png" alt="Imagem 3">
+            <img src="Img/Foto4.png" alt="Imagem 4">
+            <img src="Img/Foto5.png" alt="Imagem 5">
+            <img src="Img/Foto6.png" alt="Imagem 6">
+        </div>
+        
+        <div class="container-gif">
+            <div class="gif">
+                <img src="Img/Cat.gif" alt="GIF animado">
+            </div>
+        </div>
+        
+        <p>❤️💕💞💓💗AMO VC💖💖💓💓💞</p>
+        
+    
+    </main>
+
+    <script>
+
+        const playButton = document.getElementById('play-button');
+        const audio = document.getElementById('audio');
+
+        playButton.addEventListener('click', function () {
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        });
+    </script>
+
+    
+</body>
+</html>
